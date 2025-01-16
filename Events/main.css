@@ -1,0 +1,15 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+li{
+    padding:  10px 15px;
+    border: 1px solid black;
+}
+
+.highlight{
+    background-color: red;
+}
