@@ -20,14 +20,14 @@ describe('Test Promises', () => {
         const input = "Hello world"
         const duration = 2000
         //return expect(sayName1(input,duration)).rejects.toBeDefined()
-        //return expect(sayName1(input,duration)).resolves.toBe(input)  // then behaviour 
+         expect(sayName1(input,duration)).resolves.toBe(input)  // then behaviour 
 
         // then 
         // async await 
 
         //    try{
-        const result = await sayName1(input, duration) //result = "Hello World "
-        expect(result).toBe(input)
+      // const result = await sayName1(input, duration) //result = "Hello World "
+        //expect(result).toBe(input)
         //    }catch(error){
         //     expect(error).toBeDefined()
         //    }

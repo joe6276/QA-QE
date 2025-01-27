@@ -137,4 +137,8 @@ btn.addEventListener('click', TrackMe)
 // Checkout => Displa
 // Validations
 // Nice UI
-///Deadline Wednesday 
+///Deadline Wedne
+
+
+const ps= document.querySelectorAll("a")
+console.log(Array.from(ps));

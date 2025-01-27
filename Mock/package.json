@@ -1,0 +1,18 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "vitest --run --environment happy-dom"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vitest": "^3.0.4"
+  },
+  "devDependencies": {
+    "happy-dom": "^16.7.3"
+  }
+}

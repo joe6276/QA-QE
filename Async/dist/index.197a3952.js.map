@@ -1,0 +1,1 @@
+{"mappings":"AACA,MAAM,KAAc,SAAS,gBAAgB,CAAC;AAC9C,QAAQ,GAAG,CAAC,MAAM,IAAI,CAAC","sources":["apps.ts"],"sourcesContent":["\r\nconst ps:NodeList = document.querySelectorAll(\"a\")\r\nconsole.log(Array.from(ps));\r\n"],"names":[],"version":3,"file":"index.197a3952.js.map","sourceRoot":"/__parcel_source_root/"}
