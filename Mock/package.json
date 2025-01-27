@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "test1": "vitest --run ",
     "test": "vitest --run --environment happy-dom"
   },
   "keywords": [],

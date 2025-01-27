@@ -18,37 +18,33 @@ vi.mock('path', ()=>{
     }
 })
 
-it('', ()=>{
+it("Shouldcall the writeFile ", async()=>{
     
+    let tesdata= " hello There"
+    let testFile= 'test.txt'
+
+    // expect(writeData(tesdata, testFile)).resolves.toBeUndefined()
+    // We are working with production data - we will have the real data + data from tests
+    // we dont ant to have data from test
+    
+   await writeData(tesdata,testFile)
+
+    expect(fs.writeFile).toBeCalled()
+
+    // to see if a filename was passed - argument passed to writefile
+
 })
 
-// it("Shouldcall the writeFile ", async()=>{
+
+it("Shouldcall the writeFile  with the filename ", async()=>{
     
-//     let tesdata= " hello There"
-//     let testFile= 'test.txt'
-
-//     // expect(writeData(tesdata, testFile)).resolves.toBeUndefined()
-//     // We are working with production data - we will have the real data + data from tests
-//     // we dont ant to have data from test
+    let tesdata= " hello There"
+    let testFile= 'test.txt'
     
-//    await writeData(tesdata,testFile)
+    await writeData(tesdata, testFile)
 
-//     expect(fs.writeFile).toBeCalled()
+    expect(fs.writeFile).toBeCalledWith(testFile, tesdata)
 
-//     // to see if a filename was passed - argument passed to writefile
+    // to see if a filename was passed - argument passed to writefile
 
-// })
-
-
-// it("Shouldcall the writeFile  with the filename ", async()=>{
-    
-//     let tesdata= " hello There"
-//     let testFile= 'test.txt'
-    
-//     await writeData(tesdata, testFile)
-
-//     expect(fs.writeFile).toBeCalledWith(testFile, tesdata)
-
-//     // to see if a filename was passed - argument passed to writefile
-
-// })
+})
