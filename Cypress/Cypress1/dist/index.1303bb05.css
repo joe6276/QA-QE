@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --color-gray-100: #f9f7fc;
+  --color-gray-200: #f3eefc;
+  --color-gray-300: #c7c0da;
+  --color-gray-400: #a396bf;
+  --color-gray-500: #8172a2;
+  --color-gray-600: #6b5f8a;
+  --color-gray-700: #5a4f73;
+  --color-gray-800: #4c4160;
+  --color-gray-900: #3c334d;
+  --color-primary-100: #f4ebff;
+  --color-primary-200: #e1d0ff;
+  --color-primary-300: #c9aaff;
+  --color-primary-400: #b085f5;
+  --color-primary-500: #9755f5;
+  --color-primary-600: #7442c8;
+  --color-primary-700: #5a32a3;
+  --color-primary-800: #4c2889;
+  --color-primary-900: #3c1d6b;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+html {
+  height: 100%;
+  color: var(--color-gray-100);
+  background: linear-gradient(160deg, #241b33, #281b42);
+}
+
+body {
+  margin: 0;
+}
+
+.backdrop {
+  z-index: 1;
+  background-color: #000000b3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  background-color: var(--color-gray-800);
+  z-index: 10;
+  border: none;
+  border-radius: 4px;
+  width: 40rem;
+  margin: 0;
+  padding: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #0000004d;
+}
+
+main {
+  background-color: var(--color-gray-900);
+  border: 2px solid var(--color-gray-300);
+  border-radius: 8px;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 3rem;
+}
+
+.main-header {
+  text-align: center;
+  color: var(--color-gray-400);
+  margin: 3rem auto;
+}
+
+.main-header img {
+  object-fit: contain;
+  width: 7rem;
+  height: 7rem;
+  transform: rotateZ(10deg);
+}
+
+#task-control {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+#task-control button {
+  font: inherit;
+  background-color: var(--color-gray-800);
+  color: var(--color-gray-100);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: .75rem 1.5rem;
+}
+
+#task-control button:hover {
+  background-color: var(--color-gray-700);
+}
+
+#task-control select {
+  font: inherit;
+  background-color: var(--color-gray-400);
+  color: var(--color-gray-900);
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+.task-list {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.no-tasks {
+  text-align: center;
+  color: var(--color-gray-400);
+  margin: 3rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.task {
+  border: 1px solid var(--color-gray-600);
+  background-color: var(--color-gray-700);
+  border-radius: 4px;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+}
+
+.task-category {
+  font-size: 1.25rem;
+}
+
+.task h2 {
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.task p {
+  color: var(--color-gray-200);
+  margin: 0;
+}
+
+#new-task-form label {
+  margin-bottom: .5rem;
+  font-weight: bold;
+  display: block;
+}
+
+#new-task-form input, #new-task-form textarea, #new-task-form select {
+  font: inherit;
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-gray-400);
+  width: 100%;
+  color: var(--color-gray-900);
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+.actions {
+  justify-content: flex-end;
+  gap: 1rem;
+  display: flex;
+}
+
+#new-task-form button {
+  background-color: var(--color-primary-500);
+  color: var(--color-gray-100);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: .75rem 1.5rem;
+}
+
+#new-task-form button:hover {
+  background-color: var(--color-primary-600);
+}
+
+#new-task-form button[type="button"] {
+  color: var(--color-gray-200);
+  background-color: #0000;
+}
+
+#new-task-form button[type="button"]:hover {
+  background-color: var(--color-gray-700);
+}
+
+.error-message {
+  color: var(--color-primary-300);
+  margin-bottom: .5rem;
+  font-weight: bold;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=index.1303bb05.css.map */

@@ -57,9 +57,7 @@ form.addEventListener('submit',event=>{
     let text= document.querySelector('#title')
     let summary= document.querySelector('#summary')
     let category= document.querySelector('#category')
-    if(text.value.trim()=='' && summary.value.trim()=='' && category.value.trim()==''){
-        errorParagraph.style.display= 'block'
-    }
+   
 
     let task={
         Id:Math.ceil(Math.random() * 1223),
@@ -67,7 +65,12 @@ form.addEventListener('submit',event=>{
         summary:summary.value,
         category:category.value
     }
+
+    text.value=''
+    summary.value=''
     tasks.push(task)
+  
+    
    getTask(tasks)
     closeModal()
 })
@@ -91,3 +94,12 @@ taskModal.addEventListener('click', (event) => {
      getTask(filteredTask)
     
   })
+
+
+  /// Cypress - a test automation tool & framework 
+
+// End to End testing - Testing Flows i.e user authentication, user-checkout flow
+// Component testing 
+
+// install - npm install cypress
+// Run npx cypress open

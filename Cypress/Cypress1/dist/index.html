@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.1303bb05.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="/image.2800e828.png" alt="A list">
+        
+      </header>
+<h1>Cypress Tasks</h1>
+      <main>
+        <div id="task-control">
+            <button id="addbtn">Add Task</button>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="urgent">🚨 Urgent</option>
+                <option value="important">🔴 Important</option>
+                <option value="moderate">🔵 Moderate</option>
+                <option value="low">🟢 Low</option>
+              </select>
+          </div>
+
+          <div class="backdrop hidden" id="backdrop">
+            <dialog class="modal" id="task-modal">
+              <form id="new-task-form">
+                <p>
+                  <label for="title">Title</label>
+                  <input type="text" id="title">
+                </p>
+                <p>
+                  <label for="summary">Summary</label>
+                  <textarea id="summary" rows="5"></textarea>
+                </p>
+                <p>
+                  <label for="category">Category</label>
+                  <select id="category" defaultvalue="moderate">
+                    <option value="urgent">🚨 Urgent</option>
+                    <option value="important">🔴 Important</option>
+                    <option value="moderate">🔵 Moderate</option>
+                    <option value="low">🟢 Low</option>
+                  </select>
+                </p>
+                <p class="error-message hidden">
+                  Please provide values for task title, summary, and category!
+                </p>
+                <p class="actions">
+                  <button type="button" id="cancel-btn">Cancel</button>
+                  <button type="submit">Add Task</button>
+                </p>
+              </form>
+            </dialog>
+          </div>
+
+
+
+          <ul class="task-list">
+           
+        </ul> 
+      </main>
+
+    <script defer="" src="/index.7c0ccee6.js"></script>
+<script src="/Cypress1.3464ddca.js"></script></body>
+</html>
