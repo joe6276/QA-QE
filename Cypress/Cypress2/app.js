@@ -16,10 +16,11 @@ btn.addEventListener('click', (event)=>{
     }else{
 
         btn.textContent="Sending..."
+        
         setTimeout(()=>{
             btn.textContent="Submit"
             btn.disabled=true
-        }, 3000)
+        }, 2000)
     }
     
 })

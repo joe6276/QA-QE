@@ -3,6 +3,7 @@
 describe('template spec', () => {
   beforeEach(()=>{
     cy.visit('/about.html')
+    cy.clock()
   })
 
   it('Should submit the form ',  () => {
@@ -11,10 +12,11 @@ describe('template spec', () => {
     // cy.get("@nameInput").focus()
     cy.get('[data-cy="contact-input-email"]').type('john@gmail.com')
     cy.get('[data-cy="contact-btn-submit"]').as('btn')
-    // cy.get('@btn').click()
-    cy.submitForm()
+    cy.get('@btn').click()
+    //cy.submitForm()
       // Alias
-
+      
+      cy.tick(2000)
     //  Assertions
     cy.get('[data-cy="contact-btn-submit"]').contains("Sending..")
     cy.get('[data-cy="contact-btn-submit"]').should('have.attr', 'disabled')
@@ -67,7 +69,8 @@ describe('template spec', () => {
       cy.get('[data-cy="contact-input-name"]').type('John Doe').as("nameInput")
       cy.get('[data-cy="contact-input-email"]').type('john@gmail.com')
       cy.submitForm()
-        // skippng clicking in the button 
+        // // skippng clicking in the button 
+        // cy.tick()
       cy.get('[data-cy="contact-btn-submit"]').contains("Sending..")
       cy.get('[data-cy="contact-btn-submit"]').should('have.attr', 'disabled')
  
