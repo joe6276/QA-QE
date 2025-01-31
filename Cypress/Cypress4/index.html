@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Create Post Section */
+        .create-post {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .create-post h2 {
+            margin-top: 0;
+            color: #1a73e8;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .input-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .post-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .post-btn:hover {
+            background-color: #1557b0;
+        }
+
+        /* Posts Display Section */
+        .posts {
+            margin-top: 30px;
+        }
+
+        .post {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .post h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .post p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Create Post Section -->
+        <div class="create-post">
+            <h2>Create New Post</h2>
+            <form>
+                <div class="input-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="input-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <button type="submit" class="post-btn">Create Post</button>
+            </form>
+        </div>
+
+        <!-- Display Posts Section -->
+        <div class="posts">
+            <!-- Example Posts -->
+            <div class="post">
+                <h3>First Post Title</h3>
+                <p>This is the description of the first post. It can contain multiple lines of text and will maintain proper spacing.</p>
+            </div>
+
+            <div class="post">
+                <h3>Another Interesting Post</h3>
+                <p>Here's another post description. The cards have a nice shadow effect and rounded corners for a modern look.</p>
+            </div>
+
+            <div class="post">
+                <h3>Latest Updates</h3>
+                <p>This is a demonstration of how multiple posts will look when stacked. Each post has consistent spacing and styling.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

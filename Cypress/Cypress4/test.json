@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "password": "John1234",
+      "email": "john@example.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1",
+      "description": "Dummy Description"
+    }
+  ]
+}

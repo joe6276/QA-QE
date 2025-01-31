@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>body {
+  background-color: #f0f2f5;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.login-container {
+  background: #fff;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+}
+
+.login-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.login-btn:hover {
+  background-color: #1557b0;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" data-cy="email_input">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" data-cy="password-input">
+            </div>
+            <button type="button" class="login-btn" data-cy="login-btn">Log In</button>
+            <div class="signup-link">
+                Don't have an account? <a href="#">Sign up</a>
+            </div>
+        </form>
+    </div>
+    <div id="message" data-cy="message-body"></div>
+    <script src="/login.7c0ccee6.js" defer=""></script>
+<script src="/login.3249096d.js"></script></body>
+</html>

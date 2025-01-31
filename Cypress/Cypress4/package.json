@@ -1,0 +1,21 @@
+{
+  "name": "cypress4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:seed": "node seed.js",
+    "test:db":"json-server --watch test.json --port 4000",
+    "test:cy":"npx cypress open",
+    "test:start":"parcel login.html",
+    "test": "concurrently npm:test:*"
+   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "cypress": "^14.0.1"
+  }
+}
